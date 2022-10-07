@@ -1,6 +1,6 @@
 FROM maven:3-jdk-8 as mvn
 RUN git clone https://github.com/nraju4devops/spring-petclinic.git 
-RUN cd spring-petclinic && mvn package
+RUN cd spring-petclinic && mvn clean package
 
 FROM openjdk:8-alpine
 LABEL AUTHOR="devopsnraju"
