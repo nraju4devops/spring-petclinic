@@ -1,5 +1,4 @@
 FROM maven:3-jdk-8 as mvn
-WORKDIR .
 RUN cd spring-petclinic && mvn package
 
 FROM openjdk:8-alpine
