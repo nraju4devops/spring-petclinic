@@ -1,5 +1,5 @@
 FROM maven:3-jdk-8 as mvn
-RUN cd spring-petclinic && mvn package
+RUN mvn package
 
 FROM openjdk:8-alpine
 LABEL AUTHOR="devopsnraju"
